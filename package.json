@@ -19,6 +19,7 @@
   "devDependencies": {
     "@parcel/validator-typescript": "^2.0.0-alpha.3",
     "parcel": "^2.0.0-nightly.500",
+    "tiled-types": "^1.2.1",
     "typescript": "^4.1.3"
   },
   "dependencies": {

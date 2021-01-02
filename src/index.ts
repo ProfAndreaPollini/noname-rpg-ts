@@ -1,10 +1,18 @@
 
 import * as PIXI from "pixi.js"
+import {TileMap} from "./TileMap"
+
+
+import imageUrl from "url:../noname-rpg-base/assets/tiles/lpc-tile-atlas/terrain_atlas.png"
+import testMap from "url:../tmp/prova.json"
 
 const t = (msg: String) => {
     console.log(msg)
 }
 t("it worksnpm ")
+
+
+ 
 
 // The application will create a renderer using WebGL, if possible,
 // with a fallback to a canvas render. It will also setup the ticker
@@ -15,10 +23,20 @@ const app = new PIXI.Application();
 // can then insert into the DOM
 document.body.appendChild(app.view);
 
+
+
 // load the texture we need
-app.loader.add('bunny', 'bunny.png').load((loader, resources) => {
+app.loader
+    .add('bunny', imageUrl)
+    .add('map', testMap);
+    
+app.loader.load((loader, resources) => {
+    console.log(resources.bunny)
     // This creates a texture from a 'bunny.png' image
     const bunny = new PIXI.Sprite(resources.bunny.texture);
+    const map: TileMap = new TileMap(resources.map?.data)
+
+    console.log(map)
 
     // Setup the position of the bunny
     bunny.x = app.renderer.width / 2;
