@@ -1,0 +1,3 @@
+[submodule "noname-rpg-base"]
+	path = noname-rpg-base
+	url = https://github.com/ProfAndreaPollini/noname-rpg.git
