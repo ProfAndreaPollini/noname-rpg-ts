@@ -1,0 +1,27 @@
+{
+  "name": "noname-rpg-ts",
+  "version": "1.0.0",
+  "description": "Noname RPG Typescript implementation",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel serve  ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProfAndreaPollini/noname-rpg-ts.git"
+  },
+  "author": "prof. Andrea Pollini",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ProfAndreaPollini/noname-rpg-ts/issues"
+  },
+  "homepage": "https://github.com/ProfAndreaPollini/noname-rpg-ts#readme",
+  "devDependencies": {
+    "@parcel/validator-typescript": "^2.0.0-alpha.3",
+    "parcel": "^2.0.0-nightly.500",
+    "typescript": "^4.1.3"
+  },
+  "dependencies": {
+    "pixi.js": "^5.3.7"
+  }
+}
